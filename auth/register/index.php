@@ -1,10 +1,3 @@
-<?php
-session_start();
-if (!$_SESSION['status']) {
-    header("location: http://localhost/e-learning/auth/login/");
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,10 +27,41 @@ if (!$_SESSION['status']) {
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-expand navbar-light position-relative">
+        <div class="container-fluid">
+            <span class="navbar-brand">
+                <img src="../../assets/img/logo.svg" alt="SinauKuy">
+            </span>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="wrapper d-flex justify-content-center align-items-center vh-75">
+            <div class="form-daftar">
+                <?php
+                if (isset($_GET['page'])) {
+                    $page = $_GET['page'];
+
+                    switch ($page) {
+                        case 'mahasiswa':
+                            include "register_mahasiswa.php";
+                            break;
+                        case 'dosen':
+                            include "register_dosen.php";
+                            break;
+                        default:
+                            include "404.php";
+                            break;
+                    }
+                } else {
+                    include "404.php";
+                }
+
+                ?>
+            </div>
+        </div>
+    </div>
 
 </body>
-<script>
-    location.replace("http://localhost/e-learning/dashboard/")
-</script>
 
 </html>

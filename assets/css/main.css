@@ -1,0 +1,323 @@
+:root {
+  --primary-color: #ffc93c;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+body {
+  background-color: #f5f7fb !important;
+}
+
+.main-title {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.rounded-15 {
+  border-radius: 15px;
+}
+
+.title-class,
+strong {
+  font-size: 18px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: white;
+  height: 100px;
+}
+
+.navbar-brand img {
+  width: 90%;
+}
+
+.search-bar {
+  margin-left: 50px;
+}
+
+.search-bar input {
+  border-radius: 30px;
+}
+
+.search-bar button {
+  background: var(--primary-color);
+  border-radius: 0px 30px 30px 0px;
+  border-color: var(--primary-color);
+}
+
+.profile img {
+  width: 60px;
+}
+
+/* end-Navbar */
+
+/* Sidebar */
+.sidebar {
+  display: none;
+  width: 250px;
+  height: 100vh;
+  background-color: white;
+}
+
+.nav-item a {
+  font-size: 18px;
+  color: black;
+  margin: 15px 0;
+}
+
+.active {
+  background: var(--primary-color) !important;
+  border: 1px solid var(--primary-color) !important;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* end-Sidebar */
+
+/* Dashboard-Courses */
+.box-courses {
+  height: 190px;
+  width: 350px;
+  background: #ffffff;
+  border-radius: 25px;
+  padding: 0 0 0 25px;
+  display: flex;
+  align-items: center;
+}
+
+.button-courses {
+  background-color: var(--primary-color);
+  width: 75px;
+  height: 190px;
+  border-radius: 0px 25px 25px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-courses a {
+  color: black;
+}
+
+.course-name {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.course-lecturer {
+  font-size: 16px;
+}
+
+.pagination > li {
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  background: #c4c4c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.pagination li a {
+  text-decoration: none;
+  color: black;
+}
+/* end-Dashboard-Courses */
+
+/* Dashboard-Tasks */
+.box-tasks {
+  display: flex;
+  padding: 15px 20px;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 25px;
+  width: 280px;
+}
+/* end-Dashboard-Tasks */
+
+/* Dashboard-Scheduler */
+.wrapper-schedule {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.box-schedule {
+  display: flex;
+  background: #ffffff;
+  border-radius: 25px;
+  width: 200px;
+  height: auto;
+}
+
+.info-schedule {
+  padding: 15px 20px;
+}
+
+.box-schedule .colors {
+  width: 20px;
+  background: #31326f;
+  border-radius: 15px 0px 0px 15px;
+}
+/* End-Dashboard-Scheduler */
+
+/* Courses Page */
+.wrapper-courses {
+  width: 300px;
+  height: 300px;
+  border-radius: 14px;
+  overflow: hidden;
+  margin: 1.5rem 2rem;
+}
+.wrapper-courses .detail-course {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 20px;
+  height: 150px;
+  background: #00c6ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0072ff,
+    #00c6ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0072ff,
+    #00c6ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  overflow: hidden;
+}
+
+.wrapper-courses .title-course {
+  color: white;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.wrapper-courses .title-dosen {
+  color: white;
+  font-size: 14px;
+}
+
+.wrapper-courses .detail-task {
+  height: 150px;
+  background-color: white;
+  border-radius: 0 0 15px 15px;
+}
+/* end Courses Page */
+
+/* Tasks Page */
+.wrapper-tasks {
+  border: 1px solid #cecfd3;
+  box-sizing: border-box;
+  border-radius: 15px;
+  width: 447px;
+  height: 150px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 30px;
+  margin: 1rem 2rem;
+}
+
+.tasks-img {
+  margin-right: 60px;
+}
+
+.detail-tasks .title-course {
+  font-size: 24px;
+}
+
+.detail-tasks .title-tasks {
+  font-size: 16px;
+}
+
+.deadline-date p {
+  font-weight: 500;
+  font-size: 16px;
+}
+/* end Tasks-Page */
+
+/* Courses */
+.masuk-kelas {
+  border-radius: 14px;
+  background-color: #c4c4c4;
+  align-items: center;
+  align-content: center;
+  width: 180px;
+  padding: 8px 10px;
+  justify-content: center;
+}
+
+/* end Courses */
+
+/* Login Select */
+.login-select {
+  border-radius: 15px;
+  background-color: white;
+  width: 25%;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.form-daftar {
+  background-color: white;
+  width: 40%;
+  padding: 15px 20px;
+  border-radius: 15px;
+}
+
+.vh-75 {
+  height: 75vh;
+}
+
+/* end Login Select */
+
+/* Detail Kelas */
+.bg-gradient-blue {
+  background: #00c6ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0072ff,
+    #00c6ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0072ff,
+    #00c6ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  overflow: hidden;
+}
+/* end Detail Kelas */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    display: block;
+  }
+
+  .main-content {
+    margin-left: 275px;
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}

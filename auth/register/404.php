@@ -1,10 +1,3 @@
-<?php
-session_start();
-if (!$_SESSION['status']) {
-    header("location: http://localhost/e-learning/auth/login/");
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,9 +28,10 @@ if (!$_SESSION['status']) {
 
 <body>
 
+    <div class="wrapper d-flex justify-content-center align-items-center mt-5">
+        <img src="../../assets/img/404.jpg" alt="404 Not Found" width="500" class="mt-5">
+    </div>
+
 </body>
-<script>
-    location.replace("http://localhost/e-learning/dashboard/")
-</script>
 
 </html>
